@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+p{
+    margin-top: 10px;
+    font-size: 14px; 
+    text-align: justify;
+}
+.container, .book-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

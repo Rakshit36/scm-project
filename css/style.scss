@@ -1,0 +1,175 @@
+/*Google Fonts Connection*/
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+/*SCSS Variables to prevent repition*/
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #262626;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581dc;
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 10vh;
+    background: #000;
+    background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(images/Ulster_Rally.jpg);
+    box-sizing:border-box;
+}
+/*Navigation*/
+
+/*Logo*/
+header .logo img{
+float: left;
+margin-left: 10px;
+margin-top: 10px;
+width: 50px;
+height: 50px;
+}
+/*Footer*/
+.footer{
+	background-color: #A9A9A9;
+    color: white;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+    height: 5%;
+	text-align: left;
+	font: bold 14px sans-serif;
+
+	padding: 1px 1px;
+	margin-top: 70px;
+}
+
+/*Main Content*/
+.main {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    color: darkblue;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.main p {
+    font-family: 'Righteous', cursive;
+    font-size: 75%;
+    color: black;
+    margin-left: 10px; 
+    text-align: left;
+}
+
+.main h1 {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 100%;
+    margin-left: 10px; 
+}
+.main h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 95%;
+    margin-left: 10px; 
+}
+
+/*Grid Base - Home Page*/
+.home_grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  margin-right: 10px;
+  color: #444;
+}
+
+.home_box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+/*Image Gallery*/
+.gallery-block{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom:50px; 
+    text-align: center;
+}
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase; 
+}
+.gallery-block.cards-gallery h6{
+    font-size:17px;
+    font-weight:bold;
+}
+.gallery-block.cards-gallery .card{
+    transition: 0.4s ease;
+}
+.gallery-block.cards-gallery .card img{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+.gallery-block.cards-gallery .card-body{
+    text-align: center;
+}
+.gallery-block.cards-gallery .card-body p{
+    font-size:  15px;
+}
+.gallery-block.cards-gallery a{
+    color: #212529;
+}
+.gallery-block.cards-gallery a:hover{
+    text-decoration: none;
+}
+.gallery-block.cards-gallery .card{
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+/*Buttons on gallery thumbnails*/
+.btn{
+    background-color: navy;
+    border: none;
+}
+.btn:hover{
+    background-color: coral;
+}
+/*Responsive Gallery*/
+@media(min-width: 576px){
+    .gallery-block .transform-on-hover:hover{
+        transform: translateY(-10) scale(1.02);
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.15) !important;
+    }
+    
+}
+/*Responsive Navigation*/
+@media (max-width: 768px){
+    
+    header{
+        height: 22%;
+    }
+header ul{
+    margin-left: 50px;
+    display:block;
+    }
+    header ul{
+    display: block;
+    }
+    header ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+}

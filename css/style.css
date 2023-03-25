@@ -1,0 +1,1089 @@
+/*Google Fonts Connection*/
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oregano&display=swap');
+/*SCSS Variables to prevent repition*/
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Righteous', cursive;
+}
+/*Banner*/
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    background: #000;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/anglia.png);
+    background-size: cover;
+    background-position: -5px;
+    box-sizing:border-box;
+    font-family: 'Righteous', cursive;
+}
+/*Logo*/
+header .logo img{
+float: left;
+height: 50px;
+line-height: 50px;
+width: 50px;
+height: 50px;
+}
+/*Navigation*/
+header nav.navigation{
+    float: right;
+    z-index: 2;
+}
+header nav.navigation ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav.navigation ul li{
+    list-style: none;
+    position: relative;
+}
+header nav.navigation ul li.sub-menu:before{
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+    z-index: 10;
+}
+header nav.navigation ul li.active.sub-menu:before{
+    content: '\f0d8';
+}
+header nav.navigation ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+header nav.navigation ul li a:hover,
+header nav.navigation ul li a.active{
+    color:#fff;
+    background: #D3D3D3;
+}
+/*Navigation DropDowns*/
+header nav.navigation ul li ul{
+    position: absolute;
+    left: 0;
+    background: #333;
+    z-index: 10;
+    display: none;
+}
+header nav.navigation ul li.active ul{
+    display:block;
+    z-index: 10;
+}
+header nav.navigation ul li ul li{
+    display: block;
+    width: 200px;
+    z-index: 40;
+}
+/*Responsive Navigation*/
+.menu-toggle{
+   color: #fff;
+   float: right;
+   line-height: 50px;
+   font-size: 24px;  
+   display: none;
+}
+/*Footer*/
+.footer{
+	background-color: #A9A9A9;
+    color: white;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+    height: 10%;
+	text-align: left;
+	font: bold 14px sans-serif;
+	padding: 1px 1px;
+	margin-top: 600px;
+}
+.footer p{
+    padding-left: 10px;
+}
+/*Main Content*/
+.main {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    color: darkblue;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.main p {
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+    color: black;
+    margin-left: 10px; 
+    text-align: left;
+}
+
+.main h1 {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 24px;
+    margin-left: 10px; 
+}
+.main h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 95%;
+    margin-left: 10px; 
+}
+.main h3 {
+        text-align: center;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 95%;
+    margin-left: 10px; 
+}
+.main h4{
+      text-align: center;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 95%;
+    margin-left: 10px; 
+}
+
+/*Heading on accordion*/
+.latestnews .mynews .newscontent h5{
+    text-align: center;
+    color: black;
+    font-family: 'Righteous', cursive; 
+}
+#accordion h4{
+      text-align: center;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 95%;
+    margin-left: 10px; 
+}
+#accordion p{
+      text-align: left;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    margin-left: 10px; 
+}
+#accordion ol li{
+      text-align: left;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    margin-left: 10px; 
+}
+#accordion ul li{
+      text-align: left;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    margin-left: 10px; 
+}
+/*Banner over ITRC page*/
+.main .irishtarmac{
+    width: 108vh;
+    height: 57vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/1.CraigBreen.png);
+   margin-left: 200px;
+}
+.main .irishtarmac .ITRC{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*Banner over the WRC Page*/
+.main .wrc{
+    width: 120vh;
+    height: 70vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/loeb.png);
+   margin-left: 200px;
+}
+.main .wrc .WRC{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*Banner Image for Northern Ireland Rally Championship*/
+.main .ni{
+    width: 120vh;
+    height: 50vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/17.StuartBiggerstaff.png);
+   margin-left: 300px;
+}
+.main .ni .NI{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.main .national{
+    width: 100vh;
+    height: 40vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/6.MartyToner.png);
+   margin-left: 300px;
+}
+.main .national .NAT{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*Gallery Heading*/
+heading{
+    margin-top: 500px;
+}
+/*Grid Base - Home Page*/
+.home_grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  margin-right: 10px;
+  color: #444;
+}
+
+.home_box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+/*Championship standings table*/
+ table .nat_series{
+    color:black;
+    background-color: blue;
+    font-family: 'Righteous', cursive;
+}
+/*Interactive Calendar*/
+.calendar-title h1{
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+}
+ .season {
+    color: #000;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 1840px;
+    padding: 0 40px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .calendar-wrap{
+      position:relative; 
+      padding:0 50px;
+}
+  .championship{
+    overflow-x:auto;
+    background-repeat: repeat-x;
+    background-size: 10px 2px;
+    background-position: center top 60%;
+    background-image: linear-gradient(90deg,#000 66%,transparent 0);
+    padding: 50px 0;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+    transition: height .2s ease-out;
+    transition: height .2s ease-out;
+    transition: height .2s ease-out;
+  }
+  .calendar-title, .championship-content-title
+{
+    font-weight:600;
+}
+  .championship-item{
+    display:flex;
+    justify-content: space-between;
+    flex-flow:wrap;
+    transition: max-width .2s,transform .4s ease-out;
+    cursor: pointer;
+    margin:0 50px; 
+    height:auto;
+
+  }
+  .i-is-active.championship-item{
+      cursor:default;
+}
+  .championship-content{
+      width:100%;
+}
+  .p-championship-item:hover{
+      transform:scale(1.1); 
+      transition:transform .3s ease;
+}
+  .event1:hover time, .event1.i-is-active time, .event-content-title.event1{
+      color:darkslategray;
+}
+  .event2:hover time, .mini.i-is-active time, .event-content-title.event2{
+      color:darkslategray;
+}
+  .event1:hover time, .event2:hover time, .event1 time, .event2 time{
+      transition:color .3s ease;
+}
+  .p-championship-item.i-is-active{
+      cursor: default;
+}
+  .event1:hover .p-championship-block{
+      background-color:darkslategray;
+}
+  .event2:hover .p-championship-block{
+      background-color: darkslategray;
+}
+  .event1 .p-championship-block, .event2 .p-championship-block, .mini:hover .p-championship-block, .event1:hover .p-championship-block {
+      transition:background-color 1s ease;
+}
+  .p-championship-round, .p-championship-event, .p-championship-block{
+      width:100%;
+}
+  .p-championship-round{
+      font-weight:600;
+      font-family: 'Righteous', cursive;
+      font-size:20px;
+}
+  .p-championship-event{
+      margin-top: 5px;
+      margin-bottom: 10px;
+}
+  .p-championship-block {
+    min-width:55px;
+    min-height:55px;
+    max-width:55px;
+    max-height:55px;
+    border: solid 0px black;
+    border-radius:50%;
+    background-color:silver;
+    position:relative;
+    top:3px;
+    left:48px;
+    margin-bottom:20px;
+  }
+
+  .p-championship-item{
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    min-width:150px;
+    max-width:150px;
+    position: relative;
+    text-align:center;
+    font-family: 'Righteous', cursive;
+    transition:color .3s ease-in-out;
+    transition:transform .3s ease;
+  }
+  .p-championship-content{
+    width:98%;
+    height:0;
+    position:absolute;
+    overflow:hidden;
+    visibility:hidden;
+    font-family: 'Righteous', cursive;
+    opacity: 0;
+    transform:translateX(-1000px);
+    transition: all 1s ease-in-out;
+    padding: 50px 20px 20px 20px;
+  }
+  .i-is-active.p-championship-content{
+    color: #000;
+    height:auto;
+    padding: 50px 20px 20px 20px;
+    float:left;
+    width:98%;
+    text-align:left;
+    position:relative;
+    visibility: visible;
+    font-family: 'Righteous', cursive;
+    opacity:1;
+    transform:translateX(0px);
+    transition: all .5s ease-in-out;
+  }
+  .i-is-active.p-championship-content h3, .i-is-active.p-championship-content time{
+      width:100%;
+}
+  .i-is-active.p-championship-content .championship-content-card{
+      width:40%;
+}
+  .i-is-active.p-championship-content .championship-content-image{
+      width:59%;
+}
+  .i-is-active.p-championship-content .championship-content-card, .i-is-active.p-championship-content .championship-content-image{
+      float:left;
+}
+  .i-is-active.p-championship-content .championship-content-image:after{
+      clear:both;
+}
+  .i-is-active.event1 .p-championship-block{
+      background-color:silver;
+} 
+  .i-is-active.event2 .p-championship-block{
+      background-color:#ed9300;
+} 
+  .i-is-active.p-championship-item:hover{
+      transform: none;
+}
+  .i-is-active .p-championship-item{
+      transform:scale(1.1);
+}
+  .event1.i-is-active.p-championship-content h3 {
+      color:#1C69D4;
+}
+  .event2.i-is-active.p-championship-content h3 {
+      color:#ed9300;
+}
+  .championship-content-image img{
+      width:50%;
+      height:auto;
+      max-width:100%;
+}
+  .p-championship-content time {
+      font-size: 16px; 
+      line-height: 40px; 
+      font-style: italic; 
+      color: white;
+}
+  .p-championship-content p {
+      font-size:18px; 
+      font-family: 'Righteous', cursive;
+      line-height:21px; 
+      padding-right:30px; 
+      font-weight:300;
+      color: white;
+}
+  .championship-content-title{font-size:28px; color:white;}
+.background{
+    background-color: navy;
+}
+  .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.close:hover {opacity: 1;}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {transform: rotate(45deg);}
+.close:after {transform: rotate(-45deg);}
+
+/*Custom scrollbar styling*/
+.championship::-webkit-scrollbar {height:8px;}
+.championship::-webkit-scrollbar-track {box-shadow: inset 0 0 5px lightgrey; border-radius: 10px;} /* Track */
+.championship::-webkit-scrollbar-thumb {background: silver; border-radius: 10px;} /* Handle */
+
+
+/* laptop resolutions*/
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+  .championship{background-position: center top 60%;}
+  .i-is-active.p-championship-content .championship-content-card{width:48%;}
+  .i-is-active.p-championship-content .championship-content-image{width:50%;}
+}
+/*Tablet - Landscape*/
+@media screen and (max-width: 1199px){
+  .championship-content-title{font-size: 1.7em;}
+  .p-championship-content time{font-size:1em;}
+}
+/*Tablet - Portrait*/
+@media screen and (max-width: 1020px){
+  .p-championship-event{margin:0;}
+   .season{padding:0 40px;} 
+  .calendar-wrap{padding:0;}
+  .p-championship-content{display:flex;flex-flow: column;}
+  .i-is-active.p-championship-content .championship-content-card, .i-is-active.p-championship-content .championship-content-card, .i-is-active.p-championship-content .championship-content-image{width:100%;}
+  .i-is-active.p-championship-content .championship-content-image{padding:0; order:0; margin-bottom:20px;}
+  .i-is-active.p-championship-content .championship-content-card{padding:0; order:1;}
+  .i-is-active.p-championship-content{padding-left:0; padding-right:0;}
+  .championship-content-button{width:100%; padding:10px 0px;} 
+  
+}
+/* Mobile devices */
+@media screen and (max-width: 768px){
+  body{padding:0;} 
+  .championship{background-position: center top 55%;}
+  .championship-item{margin:0 10px;}
+  .p-championship-block{min-width: 45px; min-height: 45px; max-width: 45px; max-height: 45px;}
+  .p-championship-round{font-size:16px;}
+  .p-championship-event{margin:0; line-height:20px; font-size: 13px;}
+  .p-championship-content time{line-height:20px;}
+  .p-championship-content p{font-size:0.9em; padding-right:0px;}
+  .championship-content-title{font-size:1.5em; line-height:1.3em;}
+  .close{right:0px;}
+  .calendar-title{line-height:1em; font-size:1.5em;}
+  .championship::-webkit-scrollbar {height:4px;}
+}
+/*Registrations System*/
+.form-title {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background-image:linear-gradient(rgba(0,0,100,0.6),rgba(0,0,100,0.6)), url(../images/anglia.png);
+  background-size: cover;
+  background-position: -5px;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.register_login {
+  margin: 10px 0px 10px 0px;
+}
+.register_login input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.register_login textarea {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/anglia.png);
+  background-size: cover;
+  background-position: -5px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-image:linear-gradient(rgba(0,0,100,0.6),rgba(0,0,100,0.6)), url(../images/anglia.png);
+
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+#background{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/6.MartyToner.png);
+    background-size: cover;
+    background-position: -5px;
+}
+/* Terms and conditions */
+.tc_cookie {
+    position: fixed;
+    will-change: transform;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:linear-gradient(rgba(0,0,100,0.6),rgba(0,0,0,100.6)), url(../images/anglia.png);
+    background-size: cover;
+    background-position: -5px;
+    color: #fff;
+    font-size: 0.75rem;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.5s;
+  }
+  .active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .cookie_info {
+    display: flex;
+    flex-grow: 1;
+    font-family:'Roboto', sans-serif;
+    color: white;
+  }
+  .cookie_info p{
+      color: white; 
+      font-size: 16px;
+      font-family: 'Righteous', cursive;
+  }
+  .T_C_button{
+      font-size: 16px;
+      font-family: 'Righteous', cursive;
+      border-radius: 10%;
+      float: right;
+      height: 50px;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+
+  }
+  .T_C_button:hover{
+      cursor: pointer;
+  }
+/*Image Gallery*/
+.gallery-block{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.gallery-block .heading{
+    margin-bottom:50px; 
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase; 
+    font-family: 'Righteous', cursive;
+}
+.gallery-block .cards-gallery h6{
+    font-size:14px;
+    font-weight:bold;
+    font-family: 'Righteous', cursive;
+}
+.gallery-block .cards-gallery .card{
+    transition: 0.4s ease;
+    height: auto;
+}
+.gallery-block .cards-gallery .card img{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+    filter: grayscale(100%);
+    color: silver;
+    transition:.5s;
+}
+.gallery-block.cards-gallery .card img:hover{
+    filter: grayscale(0);
+    transition:.5s;
+}
+.gallery-block.cards-gallery .card-body{
+    text-align: center;
+}
+.gallery-block.cards-gallery .card-body p{
+    font-size:  15px;
+    font-family: 'Righteous', cursive;
+    height: 50px;
+}
+.gallery-block.cards-gallery a{
+    color: #212529;
+}
+.gallery-block.cards-gallery a:hover{
+    text-decoration: none;
+}
+.img-block.cards-gal .card{
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+}
+/*Initial event thumbnails*/
+.img-block{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.img-block .heading{
+    margin-bottom:50px; 
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+.gallery-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase; 
+    font-family: 'Righteous', cursive;
+}
+.gallery-block .cards-gallery h6{
+    font-size:14px;
+    font-weight:bold;
+    font-family: 'Righteous', cursive;
+}
+.gallery-block .cards-gallery .card{
+    transition: 0.4s ease;
+    height: auto;
+}
+.gallery-block .cards-gallery .card img{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+    filter: grayscale(100%);
+    color: silver;
+    transition:.5s;
+}
+.gallery-block.cards-gallery .card img:hover{
+    filter: grayscale(0);
+    transition:.5s;
+}
+.gallery-block.cards-gallery .card-body{
+    text-align: center;
+}
+.gallery-block.cards-gallery .card-body p{
+    font-size:  15px;
+    font-family: 'Righteous', cursive;
+    height: 50px;
+}
+.gallery-block.cards-gallery a{
+    color: #212529;
+}
+.gallery-block.cards-gallery a:hover{
+    text-decoration: none;
+}
+.gallery-block.cards-gallery .card{
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+}
+/* events*/
+.Event_Thumbnail{
+    width: 20%;
+    display:inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    margin:40px;
+    box-shadow: 2px 2px 10px black;
+}
+.main-gallery{
+    display: inline-block;
+}
+/*Card image*/
+.image img{
+    width: 100%;
+    border-radius: 5px;
+}
+/*Title on the card*/
+.eventName h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+/*Description*/
+.date{
+    text-align: center;
+    padding: 5px;
+}
+/*Championship Tabs*/
+.rounds{
+  width: 100%;
+  padding-left: -300px;
+  background-color: #A9A9A9;
+  border-radius: 5px 5px 5px 5px;
+}
+ul#rounds-nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+}
+ul#rounds-nav li {
+  float: left;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+  margin-right: 10px;
+  padding: 5px 0px;
+  width: 42px;
+  height: 38px;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+ul#rounds-nav li img{
+    display: inline;
+    
+}
+ul#rounds-nav li:hover,
+ul#rounds-nav li.active {
+  background-color: silver;
+    width: 42px;
+    height: 42px;
+}
+#rounds-nav li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.rounds-content {
+  padding: 10px;
+  border: 5px solid #A9A9A9;
+  background-color: #FFF;
+}
+.rounds-content h2{
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+.rounds-content p{
+    font-size: 16px;
+    font-family: 'Righteous', cursive;
+}
+/*Championship Standings*/
+.standings_container{
+    margin-left: 10px;
+}
+.standings ul { 
+    padding: 0; 
+    margin: 0;  
+}
+.standings li { 
+    float:left; 
+    list-style:none; 
+    padding:4px 10px;
+    background: #000; 
+    color:silver;
+    border-right:1px solid #fff; 
+    cursor: pointer; 
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.standings li:hover { 
+    float:left; 
+    list-style:none; 
+    padding:4px 10px;
+    background: silver; 
+    color:black;
+    transition: .5s;
+    border-right:1px solid #fff; 
+    cursor: pointer; 
+    font-size: 20px;
+}
+
+.standing { 
+    background:silver;
+    color:#fff; 
+    padding:20px;
+  width:300px; 
+    clear:both; 
+    font-size: 20px;
+    font-family: 'Righteous', cursive; }
+
+/*Table*/
+.rounds-content table{
+    font-family: 'Righteous', cursive;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+td,th{
+    border: 1px solid #A9A9A9;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.rounds-content ul li{
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    color:black;
+}
+
+/*Card for weather*/
+.forecast .card{
+    margin-left: 10px;
+
+}
+/*Image/Event Slideshow*/
+#latest_event {
+  margin: 80px auto;
+  position: relative;
+  width: 550px;
+  height: 450px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#latest_event > div {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+div #latest_image{
+    width: 500px;
+    height: 400px;
+}
+/*card for the youtube api search*/
+.card_bg{
+    background-color: silver;
+}
+.btn_bg{
+    background-color: silver;
+    color: #fff;
+}
+.iframe{
+    width: 460px;
+    height: 315px;
+    background-color: silver;
+}
+
+/*Contact Details*/
+
+body .contact{
+     background-image: url(../images/img_Ulster/2.MattEdwards.jpg);
+    background-size:cover;
+    background-position: -5px
+}
+.contact_us{
+    margin-top: 100px;
+    background:rgba(0,0,0, .6);
+    color:white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px;
+   
+}
+hr{
+    background: white;
+}
+/*Team cards*/
+.teamcards{
+    color: black;
+    align-content: center;
+    width: 500px;
+    margin-left: 100px;
+}
+.teamcards .details .name .description h4 p {
+    color: black;
+}
+.teamcards .details .description {
+    color: black;
+}
+/*Responsive Gallery*/
+@media(min-width: 576px){
+    .gallery-block .transform-on-hover:hover{
+        transform: translateY(-10) scale(1.02);
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.15) !important;
+    }
+    
+}
+/*Responsive Navigation*/
+@media (max-width: 991px){
+
+    header{
+        padding: 0 20px;
+    }
+    /*Bars icon*/
+    .menu-toggle{
+        display: block;
+        cursor: pointer;
+    }
+    /*Responsive menu*/
+    header nav.navigation{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        top:50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    header nav.navigation.active
+    {
+        left:0;
+    }
+    header nav.navigation ul{
+        display: block;
+        text-align: center;
+        
+    }
+    header nav.navigation ul li a{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    /*DropDown within the menu*/
+    header nav.navigation ul li.active ul{
+        position: relative;
+        background-color:rgba(0,0,0,0.5);
+        }
+    header nav.navigation ul li ul li{
+        width: 100%;
+        
+    }
+    /*Home Page*/
+    .home_grid{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  margin-right: 10px;
+  color: #444;
+}
+
+    /*banner at top of irish tarmac*/
+.main .irishtarmac{
+    width: 105vh;
+    height: 57vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/1.CraigBreen.png) clip(100px,100px);
+   margin-left: -30px;
+}
+.main .irishtarmac .ITRC{
+    width: 150px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.main .wrc{
+    width: 100vh;
+    height: 70vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/loeb.png);
+   margin-left: 0px;
+}
+.main .wrc .WRC{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+    .main .ni{
+    width: 110vh;
+    height: 50vh;
+ background-image:linear-gradient(rgba(0,0,0,100.5),rgba(0,0,100,0.5)), url(../images/17.StuartBiggerstaff.png);
+   margin-left: -30px;
+}
+.main .ni .NI{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.main .national{
+    width: 100vh;
+    height: 40vh;
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/6.MartyToner.png);
+   margin-left: 0px;
+}
+.main .national .NAT{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+}
